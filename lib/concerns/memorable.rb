@@ -7,8 +7,11 @@ module Memorable
     def reset_all
       self.all.clear
     end
+  end
 
-    module InstanceMethods
-      def initialize
-        self.class.all << self
+  module InstanceMethods
+    def initialize
+      self.class.all << self
+    end
+  end
 end
